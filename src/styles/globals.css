@@ -15,3 +15,32 @@
     @apply border rounded-sm border-neutral-500;
   }
 }
+
+:root {
+  --color-bg: #F5F5DC;
+  --color-text: #1a202c;
+  --color-header-bg: #f7fafc;
+  --color-border: #e2e8f0;
+  --color-card-bg: #f7fafc;
+}
+
+html.dark {
+  --color-bg: #1a202c;
+  --color-text: #e2e8f0;
+  --color-header-bg: #2d3748;
+  --color-border: #4a5568;
+  --color-card-bg: #2d3748;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+header {
+  border-bottom: 1px solid var(--color-border);
+}
+
+button#theme-toggle {
+  color: var(--color-text);
+}
