@@ -32,22 +32,13 @@ const fetchDataGuide = await getEntry("guides", "guide-fetch-data");
       frameworks ? (
         <>
           <h1 class="mb-8 text-4xl font-bold">
-            Vote for your K-pop Girl Group
+            Vote for Your K-pop Girl Group
           </h1>
-          <table class="w-full text-left">
-            <thead>
-              <tr class="font-mono text-base border-t border-b">
-                <th>Name</th>
-                <th>Photo</th>
-                <th>Likes</th>
-              </tr>
-            </thead>
-            <tbody>
-              {frameworks?.map((framework) => (
-                <TableRow framework={framework} />
-              ))}
-            </tbody>
-          </table>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {frameworks?.map((framework) => (
+              <TableRow framework={framework} />
+            ))}
+          </div>
         </>
       ) : (
         <>
